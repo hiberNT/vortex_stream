@@ -1,0 +1,50 @@
+@use 'variaveis';
+
+.footer {
+    padding: 100px 8px;
+    background-color:variaveis.$corFundoPlanns;
+
+    @media (max-width:768px){
+        padding: 80px 0px;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+        
+        @media (max-width:768px){
+            font-size: 8px;
+            width: 94%;
+            display: block;
+            text-align: center;
+        }
+
+        &__item{
+            margin-right: 16px;
+            a{
+                color:variaveis.$corTextPlans;
+            }
+
+            @media (max-width:768px){
+                margin: 4px;
+            }
+        }
+    }
+
+    &__text{
+        color:variaveis.$corTextPlans;
+        display: block;
+        margin-top: 40px;
+        text-align: center;
+        justify-content: center;
+
+        @media (max-width:768px) {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5px;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+
+    
+    &__img{
+        opacity: 30%;
+        background-size: cover; 
+        min-height: 80vh;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        @media (max-width:768px) {
+            width: 180%;
+            margin-left: -48%;
+        }
+    }
+    
+    &__content{
+        max-width: 600px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        margin-left: 130px;
+
+        @media (max-width:768px) {
+            margin-left: 0; /* Remover a margem lateral */
+            padding: 160px 20px; /* Adicionar padding nas laterais */
+        }
+        
+        &__h1{
+            color: variaveis.$corDoTexto2;
+            font-size: 34px;
+            margin-bottom: 30px;
+            margin-top: 150px;
+
+            @media(max-width:768px) {
+                margin-top: 50px; /* Reduzir a margem superior */
+                font-size: 24px;
+            }
+        }
+
+        
+        &__button{
+            background-color: variaveis.$corFundoBotao;
+            padding: 2px;
+            color: variaveis.$corDoTexto2;
+            height: 40px;
+            border-radius: 4px;
+            width: 50%;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &:hover{
+                background-color: lighten( variaveis.$corFundoBotao, 15%);
+            }
+
+            @media(max-width:768px) {
+                width: 100%; 
+            }
+
+        }
+
+        &__text{
+            color: variaveis.$corDoTexto2;
+            font-size: 16px;
+            margin-top: 20px;
+
+            @media(max-width:768px) {
+                margin-top: 10px; 
+            }
+        }
+    }
+
+}
+
+
+

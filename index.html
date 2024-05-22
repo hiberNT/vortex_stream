@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex Stream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+                <h1>
+                    <img class="header__logo" src="./dist/images/logo_vortex2.png" alt="logo">
+                </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                        <a class="header__links__button" href="#">LOGIN</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="header__links__button" href="#planos">ASSINE AGORA!</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <img class="hero__img" src="./dist/images/hero__img.png" alt="">
+        <div class="hero__content">
+            <h1 class="hero__content__h1">Veja os melhores animes, tudo em um so streaming</h1>
+            <a class="hero__content__button " href="#">Experimente 7 dias grátis</a>
+            <p class="hero__content__text">Após o fim do seu teste gratuito, sua assinatura se renovará automaticamente a R$ 19,99 por mês. Você poderá cancelar a qualquer momento</p>
+        </div>
+    </section>
+    <section class="shows">
+        <h1 class="shows__h1">Seja o Primeiro a Assistir conteúdos exclusivos</h1>
+        <h3 class="shows__h3">Assista temporadas completas <br>na melhor qualidade</h3>
+
+        <nav class="shows__tabs">
+            <button data-tab-button="populares" class="shows__tabs__button shows__tabs__button--is-active">
+                MAIS POPULARES
+            </button>
+            <button data-tab-button="semanais" class="shows__tabs__button">
+                LANÇAMENTOS SEMANAIS
+            </button>
+        </nav>
+
+        <ul data-tab-id="populares" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/Animes/frieren_anime.png" alt="frieren">
+                <h3 class="shows__list__item__h3">Frieren e a jornada para o além</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Animes/kaiju_anime.png" alt="kaiju">
+                <h3 class="shows__list__item__h3">Kaiju No.8</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Animes/one_piece_anime.png" alt="one_piece">
+                <h3 class="shows__list__item__h3">One piece</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Animes/mashle_anime.png" alt="mashle">
+                <h3 class="shows__list__item__h3">MASHLE</h3>
+            </li>
+        </ul>
+
+        <ul data-tab-id="semanais" class="shows__list ">
+            <li class="shows__list__item">
+                <img src="./dist/images/Animes/my_hero_anime.png" alt="academy">
+                <h3 class="shows__list__item__h3">My Hero Academia</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Animes/tsuky_aniime.png" alt="Tsuki">
+                <h3 class="shows__list__item__h3">Tsuki michi</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Animes/viralhit_anime.png" alt="one_piece">
+                <h3 class="shows__list__item__h3">Viral hit</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Animes/wind_anime.png" alt="mashle">
+                <h3 class="shows__list__item__h3">Wind breaker</h3>
+            </li>
+        </ul>
+    </section>
+
+    <section class="watch">
+        <div class="watch__container">
+            <h2 class="watch__container__h2">Assista como quiser</h2>
+            <p  class="watch__container__text">Assista na Smart TV, Playstation, Xbox, Chromecast, Apple TV, <br>tocadores de Blu-Ray e muito mais.</p>
+        </div>
+        <img class="watch__tv" src="./dist/images/aparelhos/tv_aparelho.png" alt="tv">
+        <img class="watch__gadgets" src="./dist/images/aparelhos/todos_aparelhos.png" alt="celular,tablet,video_game">
+    </section>
+
+    <h2 id="planos" class="title">Escolha seu plano</h2>
+    <section class="plans">
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <h2 class="plans__list__item__h2">Simples</h2>
+                <h3 class="plans__list__item__h3">R$ 14,99/mês</h3>
+                <a href="#">Comece um teste grátis de 7 dias</a>
+                <p class="plans__list__item__text">Assista a todo o acervo da vortex stream, sem propagandas, com novos episódios logo após o lançamento no Japão.</p>
+                <p class="plans__list__item__text1">assista em 1 tela.</p>
+                <button class="plans__list__item__button">Assine agora</button>
+            </li>        
+        </ul>    
+            
+        <ul class="plans__list2">
+            <li class="plans__list2__item">
+                <h2 class="plans__list2__item__h2">Básico</h2>
+                <h3 class="plans__list2__item__h3">R$ 19,99/mês</h3>
+                <a href="#">Comece um teste grátis de 7 dias</a>
+                <p class="plans__list2__item__text">Assista a todo o acervo da vortex stream, sem propagandas, com novos episódios logo após o lançamento no Japão.</p>
+                <p class="plans__list2__item__text2">
+                    Assista em 4 tela simultâneas. <br>
+                    Offline Viewing
+                </p>
+                <button class="plans__list2__item__button">Assine agora</button>
+            </li>
+        </ul>
+
+        <ul class="plans__list3">
+            <li class="plans__list3__item">
+                <h2 class="plans__list3__item__h2">Anual</h2>
+                <h3 class="plans__list3__item__h3">R$ 199,99/ano</h3>
+                <a href="#">Comece um teste grátis de 7 dias</a>
+                <p class="plans__list3__item__text">Assista a todo o acervo da vortex stream, sem propagandas, com novos episódios logo após o lançamento no Japão.</p>
+                <p class="plans__list3__item__text3">
+                    Assista em 4 telas simultâneas. <br>
+                    Offline Viewing. <br>
+                    16% de desconto na mensalidade (cobrado anualmente).
+                </p>
+                <button class="plans__list3__item__button">Assine agora</button>
+            </li>    
+        </ul>
+    </section>
+    <p class="alert">*Plano se renova automaticamente ao fim do período de testes, pelo valor indicado no plano selecionado. Cancele a qualquer momento. Restrições e outras condições se aplicam. Preço, conteúdo e funcionalidades sujeitas a alteração.</p>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                <a href="#">Termos e condições de uso</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="#">Politica e privacidade</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="#">Proteção de dados no Brasil</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="#">Anúncios personalizados</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="#">Dispositivos compativeis</a>
+            </li>
+            <li class="footer__list__item">
+                <a href="#">Ajuda</a>
+            </li>
+        </ul>
+        <div class="footer__text">
+            <p>&copy;Projeto feito para fins academicos</p>
+            <p>Hibernon Neto</p>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

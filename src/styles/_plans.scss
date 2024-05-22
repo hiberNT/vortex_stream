@@ -1,0 +1,300 @@
+@use 'variaveis';
+
+.title{
+    color: variaveis.$corDoTexto1;
+    text-align: center;
+    font-size: 44px;
+    font-weight: bolder;
+
+    @media (max-width:768px) {
+        font-size: 32px;
+        margin-top: 16px;
+    }
+}
+
+.plans{
+
+    padding: 5.8vw;
+    padding-top: 50px;
+    margin-bottom: -3%;
+    display: flex;
+    text-align: center;
+
+    @media (max-width:768px) {
+        padding-top: 8px; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    &__list{
+        color: variaveis.$corDoTexto1;
+        width: 33.33%; 
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+        color: variaveis.$corDoTexto3;
+        
+        @media (max-width:768px) {
+            width: 100%; 
+            margin-bottom: 20px; 
+        }
+
+        &__item{
+            background-color: variaveis.$corFundoPlanns;
+
+            @media (max-width:768px) {
+                margin-bottom: 4px; 
+            }
+            
+            &__h2{
+                color: variaveis.$corDoTexto1;
+                font-size: 30px;
+                margin-bottom: 10px;
+                padding-top: 20px;
+
+                @media (max-width:768px) {
+                    font-size: 24px;
+                }
+            }
+
+            &__h3{
+                margin-bottom: 25px;
+                font-size: 32px;
+                color: variaveis.$corDoTexto1;
+
+                @media (max-width:768px) {
+                    font-size: 26px; 
+                    margin-bottom: 20px; 
+                }
+            }
+
+            a{
+                border: 2px solid variaveis.$corLink;
+                padding: 3px;
+                color: variaveis.$corTextPlans;
+
+                &:hover{
+                    border-color: lighten( variaveis.$corLink, 35%) ;
+                    
+                }
+            }
+
+            &__text{
+                color: variaveis.$corTextPlans;
+                margin-top: 20px;
+                margin-left: 24px;
+                word-break: break-word;
+                font-size: 16px;
+                width: 90%;
+
+                @media (max-width:768px){
+                    margin-left: 18px;
+                    font-size: 12px;
+                }
+            }
+
+            &__text1{
+                color: variaveis.$corTextPlans;
+                border-top: 2px solid gray;
+                border-bottom: 2px solid gray;
+                margin-top: 16px;
+                margin-bottom: 40px;
+                width: 64%;
+                margin-left: 20%;
+            }
+
+            
+            button{
+            background-color: variaveis.$corFundoBotao;
+            color: variaveis.$corDoTexto2;
+            height: 40px;
+            font-size: 16px;
+            padding: 8px 14px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 24px;
+
+            &:hover{
+                background-color: lighten( variaveis.$corFundoBotao, 15%);
+            }
+            }
+        }
+    }
+
+        &__list2{
+            width: 33.33%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-left: 20px;
+            
+            @media (max-width:768px) {
+                width: 100%; /* Definir a largura total ptivos móveis */
+                margin-bottom: 20px; 
+            }
+
+            &__item{
+                background-color: variaveis.$corFundoPlanns;
+            
+
+                &__h2{
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                    padding-top: 30px;
+                    color: variaveis.$corDoTexto1;
+                }
+    
+                &__h3{
+                    font-size: 32px;
+                    margin-bottom: 25px;
+                    color: variaveis.$corDoTexto1;
+                }
+    
+                a{
+                    border: 2px solid variaveis.$corLink;
+                    padding: 3px;
+                    color: variaveis.$corTextPlans;
+
+                    &:hover{
+                    border-color: lighten( variaveis.$corLink, 35%);
+                    }
+                }
+    
+                &__text{
+                    color: #fff;
+                    margin-top: 20px;
+                    margin-left: 24px;
+                    width: 90%;
+                    word-break: break-word;
+                    font-size: 16px;
+                    
+                    @media (max-width:768px){
+                        margin-left: 18px;
+                        font-size: 12px;
+                    }
+                }
+
+                &__text2{
+                    border-top: 2px solid gray;
+                    border-bottom: 2px solid gray;
+                    margin-top: 16px;
+                    margin-bottom: 48px;
+                    width: 64%;
+                    margin-left: 20%;
+                    color: #fff;
+                }
+    
+
+
+                button{
+                    background-color: variaveis.$corFundoBotao;
+                    color: variaveis.$corDoTexto2;
+                    height: 40px;
+                    font-size: 16px;
+                    padding: 8px 14px;
+                    border-radius: 4px;
+                    margin-bottom: 34px;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: lighten( variaveis.$corFundoBotao, 15%);
+                    }
+                    }
+            }
+        }
+
+        &__list3{
+            width: 33.33%; 
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-left: 20px;
+
+            @media (max-width:768px) {
+                width: 100%; 
+                margin-bottom: 20px; /* Adicionar margntre as listas */
+            }
+
+            &__item{
+                background-color: variaveis.$corFundoPlanns;
+
+                &__h2{
+                    color:variaveis.$corDoTexto1;
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                    padding-top: 40px;
+                }
+    
+                &__h3{
+                    font-size: 32px;
+                    margin-bottom: 25px;
+                    color:variaveis.$corDoTexto1;
+                }
+    
+                a{
+                    border: 2px solid variaveis.$corLink;
+                    padding: 3px;
+                    color: variaveis.$corTextPlans;
+
+                    &:hover{
+                    border-color: lighten( variaveis.$corLink, 35%);
+                    }
+                }
+    
+                &__text{
+                    color: variaveis.$corDoTexto3;
+                    margin-top: 20px;
+                    margin-left: 24px;
+                    width: 90%;
+                    font-size: 16px;
+                    word-break: break-word;
+
+                    @media (max-width:768px){
+                        margin-left: 18px;
+                        font-size: 12px;
+                    }
+                }
+
+                &__text3{
+                    border-top: 2px solid gray;
+                    border-bottom: 2px solid gray;
+                    margin-top: 16px;
+                    margin-bottom: 56px;
+                    width: 64%;
+                    margin-left: 20%;
+                    color: #fff;
+                }
+    
+
+                button{
+                    background-color: variaveis.$corFundoBotao;
+                    color: variaveis.$corDoTexto2;
+                    height: 40px;
+                    font-size: 16px;
+                    padding: 8px 14px;
+                    margin-bottom: 44px;
+                    border-radius: 4px;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: lighten(variaveis.$corFundoBotao, 15%);
+                    }
+                    }
+            }
+        }
+}
+
+.alert{
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: 4px;
+    font-size: 13px;
+
+    @media (max-width:768px){
+        font-size: 10px;
+        text-align: center;
+    }
+}

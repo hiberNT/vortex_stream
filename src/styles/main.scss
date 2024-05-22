@@ -1,0 +1,96 @@
+@use 'variaveis';
+@use 'header';
+@use 'hero';
+@use 'shows';
+@use 'plans';
+@use 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Athiti", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    background-color:variaveis.$corDeFundo;
+}
+
+
+.watch{
+    padding:5.6vw ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(/dist/images/fundo_1.png);
+    background-size: cover;
+
+    @media (max-width:768px) {
+        display: block;
+        padding: 0;
+        padding-top: 1px;
+    }
+
+    &__container{
+        margin-top: 8%;
+        margin-left: 110px;
+        color: variaveis.$corDoTexto3;
+        
+
+        &__h2{
+            margin-bottom: 30px;
+            font-size: 34px;
+            color: variaveis.$corDoTexto1;
+
+            @media (max-width:768px){
+                margin-bottom: 4px;
+                font-size: 32px;
+                margin-left: -54px;
+            }
+        }
+
+        &__text{
+            word-break: break-word;
+            font-size: 16px;
+            color: variaveis.$corDoTexto2;
+
+            @media (max-width:768px){
+                color: variaveis.$corDoTexto2;
+                margin-left: -54px;
+                margin-bottom: 8px;
+                font-size: 12px;
+    
+            }
+        }
+    }
+
+    &__tv{
+        position: relative;
+
+        @media (max-width:768px) {
+            height: 240px;
+            position: relative;
+            margin-left: 40px;
+        }
+    }
+
+    &__gadgets{
+        position: absolute;
+        height: 136px;
+        margin-top: 184px;
+        left: 50%;
+
+        @media (max-width:768px) {
+            position: absolute;
+            height: 100px;
+            margin-top: 156px;
+            left: 34px;
+        }
+
+    }
+}
+
+
